@@ -17,9 +17,9 @@ export default {
 
 <style lang="scss">
 /**
-  customVariables are loaded in
-  foundation.scss after original
-  variables.scss file
+  customVariables are loaded before
+  foundation
 */
-@import '../node_modules/foundation/scss/foundation.scss';
+@import 'customVariables';
+@import '../node_modules/foundation/scss/foundation';
 </style>
