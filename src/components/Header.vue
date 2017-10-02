@@ -24,11 +24,22 @@
               <li><a href="#">Load Data</a></li>
             </ul>
           </li>
+          <li class="menu-text"><strong>Funds: {{ funds }}</strong></li>
         </ul>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    computed: {
+      funds() {
+        return this.$store.getters.funds;
+      }
+    }
+  }
+</script>
 
 <style scoped>
   .app-name {
