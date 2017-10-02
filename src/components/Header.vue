@@ -8,7 +8,7 @@
     <div class="top-bar" id="example-menu">
       <div class="top-bar-left">
         <ul class="menu">
-          <router-link class="menu-text" tag="li" to="/">Stock Trader</router-link>
+          <router-link class="menu-text app-name" tag="li" to="/">Stock Trader</router-link>
           <router-link tag="li" to="/portfolio"><a>Portfolio</a></router-link>
           <router-link tag="li" to="/stocks"><a>Stocks</a></router-link>
         </ul>
@@ -29,3 +29,10 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+  .app-name {
+    cursor: pointer;
+  }
+</style>
+
