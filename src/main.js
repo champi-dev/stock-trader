@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-let Foundation = require('foundation')
-import '../node_modules/foundation/scss/normalize.scss'
-import '../node_modules/foundation/scss/foundation.scss'
+let Foundation = require('foundation-sites')
+import '../node_modules/foundation-sites/assets/foundation.scss'
 
 new Vue({
   el: '#app',

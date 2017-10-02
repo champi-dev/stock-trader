@@ -9,7 +9,7 @@
     "build:prod": "webpack -p"
   },
   "dependencies": {
-    "foundation": "^4.2.1-1",
+    "foundation-sites": "^6.4.3",
     "vue": "^2.4.4"
   },
   "devDependencies": {
