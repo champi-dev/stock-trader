@@ -12,6 +12,10 @@ const router = new VueRouter({
 
 import store from './store/store'
 
+Vue.filter('currency', (value) => {
+  return '$' + value.toLocaleString();
+});
+
 // Import Foundation
 import '../node_modules/foundation-sites/assets/foundation.scss'
 import 'jquery'
