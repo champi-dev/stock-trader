@@ -10,6 +10,8 @@ const router = new VueRouter({
   linkActiveClass: 'active'
 });
 
+import store from './store/store'
+
 // Import Foundation
 import '../node_modules/foundation-sites/assets/foundation.scss'
 import 'jquery'
@@ -19,5 +21,6 @@ import '../node_modules/foundation-sites/dist/js/foundation.js'
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 })

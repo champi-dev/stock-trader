@@ -10,6 +10,9 @@
 
   export default {
     name: 'app',
+    created() {
+      this.$store.dispatch('initStocks');
+    },
     mounted() {
       // Set foundation to the document. Necessary for
       // foundation plugins
