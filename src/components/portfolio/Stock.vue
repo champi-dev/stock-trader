@@ -1,3 +1,59 @@
 <template>
-  <h1>The Portfolio - Stock Component</h1>
+  <div class="small-6 medium-4 cell stock">
+    <div class="card-divider">
+    {{ stock.name }}
+    </div>
+
+    <div class="card-section">
+      <h4>Price: {{ stock.price }} | Quantity: {{ stock.quantity }}</h4>
+      <div>
+        <input
+          type="number"
+          placeholder="Quantity"
+          v-model.number="quantity"
+        >
+      </div>
+      <div>
+        <button
+          class="button alert"
+          @click="sellStock"
+          :disabled="quantity <= 0 || !Number.isInteger(quantity)"
+        >Sell</button>
+      </div>
+    </div>
+  </div>
 </template>
+
+<script>
+  import {mapActions} from 'vuex'
+
+  export default {
+    props: ['stock'],
+    data() {
+      return {
+        quantity: 0
+      }
+    },
+    methods: {
+        ...mapActions([
+          'sellStock'
+        ]),
+      sellStock() {
+        const order = {
+          stockId: this.stock.id,
+          stockPrice: this.stock.price,
+          quantity: this.quantity
+        };
+        this.sellStock();
+      }
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
+  .stock {
+    padding: 12px;
+  }
+</style>
+
+
