@@ -1,6 +1,7 @@
 # vue-foundation-test
 
-> Testing an integration of VueJs and Foundation 6 (Sass & Js plugins)
+> Testing an integration of VueJs and Foundation 6 (Sass & Js plugins).
+Currently working and ready to be used for Development.
 
 ## Build Setup
 

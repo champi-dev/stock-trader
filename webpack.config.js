@@ -60,7 +60,11 @@ module.exports = {
     ]
   },
   plugins: [
-    extractPlugin
+    extractPlugin,
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
   ],
   resolve: {
     alias: {

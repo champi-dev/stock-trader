@@ -1,3 +1,0 @@
-foundation scss
-jquery vendor
-foundation js files
