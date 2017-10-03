@@ -21,7 +21,7 @@
             <a href="#">Save / Load</a>
             <ul class="menu vertical">
               <li><a href="#" @click="saveData">Save Data</a></li>
-              <li><a href="#">Load Data</a></li>
+              <li><a href="#" @click="loadData">Load Data</a></li>
             </ul>
           </li>
           <li class="menu-text"><strong>Funds: {{ funds | currency }}</strong></li>
@@ -41,9 +41,10 @@
       }
     },
     methods: {
-        ...mapActions([
-          'randomizeStocks'
-        ]),
+        ...mapActions({
+          randomizeStocks: 'randomizeStocks',
+          fetchData: 'loadData'
+        }),
       endDay() {
         this.randomizeStocks();
       },
@@ -54,6 +55,9 @@
           stocks: this.$store.getters.stocks
         };
         this.$http.put('data.json', data);
+      },
+      loadData() {
+        this.fetchData();
       }
     }
   }
