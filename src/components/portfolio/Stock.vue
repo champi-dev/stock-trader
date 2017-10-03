@@ -1,11 +1,11 @@
 <template>
   <div class="small-6 medium-4 cell stock">
     <div class="card-divider">
-    {{ stock.name }}
+    {{ stock.name }} | Price: {{ stock.price | currency}}
     </div>
 
     <div class="card-section">
-      <h4>Price: {{ stock.price }} | Quantity: {{ stock.quantity }}</h4>
+      <h5>Quantity: {{ stock.quantity }}</h5>
       <div>
         <input
           type="number"

@@ -16,7 +16,7 @@
 
       <div class="top-bar-right">
         <ul class="dropdown menu" data-dropdown-menu>
-          <li><a href="">End Day</a></li>
+          <li><a href="#" @click="endDay">End Day</a></li>
           <li>
             <a href="#">Save / Load</a>
             <ul class="menu vertical">
@@ -32,10 +32,20 @@
 </template>
 
 <script>
+  import {mapActions} from 'vuex'
+
   export default {
     computed: {
       funds() {
         return this.$store.getters.funds;
+      }
+    },
+    methods: {
+        ...mapActions([
+          'randomizeStocks'
+        ]),
+      endDay() {
+        this.randomizeStocks();
       }
     }
   }

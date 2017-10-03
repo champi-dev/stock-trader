@@ -1,26 +1,22 @@
 <template>
   <div class="small-6 medium-4 cell stock">
     <div class="card-divider">
-    {{ stock.name }}
+    {{ stock.name }} | Price: {{ stock.price | currency}}
     </div>
 
     <div class="card-section">
-      <h4>Price: {{ stock.price }}</h4>
-      <div>
         <input
           type="number"
           placeholder="Quantity"
           v-model.number="quantity"
           :class="{danger: insufficientFunds}"
         >
-      </div>
-      <div>
+
         <button
           class="button success"
           @click="buyStock"
           :disabled="insufficientFunds || quantity <= 0 || !Number.isInteger(quantity)"
         >{{ insufficientFunds ? 'Insufficient Funds' : 'Buy' }}</button>
-      </div>
     </div>
   </div>
 </template>
