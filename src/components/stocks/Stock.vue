@@ -1,5 +1,5 @@
 <template>
-  <div class="small-6 medium-4 cell stock">
+  <div class="small-6 medium-4 columns stock">
     <div class="card-divider">
     {{ stock.name }} | Price: {{ stock.price | currency}}
     </div>

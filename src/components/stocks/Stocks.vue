@@ -1,6 +1,6 @@
 <template>
-  <div class="grid-container">
-    <div class="grid-x">
+  <div class="flex-container">
+    <div class="row">
       <app-stock
         v-for="stock in stocks"
         :key="stock.id"
