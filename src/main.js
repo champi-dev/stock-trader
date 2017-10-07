@@ -22,10 +22,10 @@ Vue.filter('currency', (value) => {
 });
 
 // Import Foundation
-import './foundation-sites/assets/foundation.scss'
+import './scss/app.scss'
 import 'jquery'
 import 'what-input'
-import './foundation-sites/dist/js/foundation'
+import '../node_modules/foundation-sites/dist/js/foundation'
 
 new Vue({
   el: '#app',
