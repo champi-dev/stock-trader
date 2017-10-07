@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-container">
+  <div>
     <div class="row">
       <app-stock
         v-for="stock in stocks"
