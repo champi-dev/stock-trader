@@ -65,7 +65,7 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+$global-font-size: 85%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
@@ -361,9 +361,9 @@ $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
 $drilldown-padding: $global-menu-padding;
 $drilldown-nested-margin: 0;
-$drilldown-background: $white;
+$drilldown-background: $light-gray;
 $drilldown-submenu-padding: $drilldown-padding;
-$drilldown-submenu-background: $white;
+$drilldown-submenu-background: $light-gray;
 $drilldown-arrow-color: $primary-color;
 $drilldown-arrow-size: 6px;
 
