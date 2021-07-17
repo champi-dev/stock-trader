@@ -1,6 +1,6 @@
 # stock-trader
 
-> Vuejs example app hosted with firebase.
+* Live demo: https://trader-vue.firebaseapp.com/
 
 ## Build Setup
 
